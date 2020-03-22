@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
+% Medium Length Professional Chinese CV
 % LaTeX Template
 % Version 2.0 (8/5/13)
 %
@@ -9,9 +9,12 @@
 % Original author:
 % Trey Hunner (http://www.treyhunner.com/, https://github.com/treyhunner/resume)
 %
+% Modified (19/03/2020) to support Chinese language and profile picture by:
+% Edward Pearce (https://edwardmpearce.github.io)
+%
 % Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
+% This template requires the zhresume.cls file to be in the same directory as the
+% .tex file. The zhresume.cls file provides the resume style used for structuring the
 % document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -20,14 +23,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{zhresume} % Use the custom resume-zh.cls style
+\documentclass{zhresume} % Use the custom zhresume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
 
-\name{Edward Pearce} % Your name
-\address{Email: \href{edwardm.pearce@yahoo.co.uk}{edwardm.pearce@yahoo.co.uk} \\ \href{https://www.linkedin.com/in/edwardm-pearce/}{linkedin.com/in/edwardm-pearce}} % Contact details line 1 (e.g. phone and email)
-\address{Website: \href{https://edwardmpearce.github.io}{edwardmpearce.github.io} \\ \href{https://github.com/edwardmpearce}{github.com/edwardmpearce}} % Contact details line 2 (e.g. address)
+\name{罗毅华 Edward Pearce} % Your name
+\setimgpath{profilepic.jpg} % Path to a profile picture to be placed in the top right corner
+\address{ +44(0)7783436944 \\ \href{edwardm.pearce@yahoo.co.uk}{edwardm.pearce@yahoo.co.uk} } % Contact details line 1 (e.g. phone and email)
+\address{个人网站： \href{https://edwardmpearce.github.io}{edwardmpearce.github.io} \\ \href{https://www.linkedin.com/in/edwardm-pearce/}{linkedin.com/in/edwardm-pearce}} % Contact details line 2 (e.g. address)
 
 \begin{document}
 
@@ -35,16 +39,20 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
+\begin{rSection}{教育经历}
 
-{\bf The University of Sheffield, PhD in Mathematics} \hfill {\em October 2016 - Present} \\ 
-Supervisor: Dr. Paul Johnson \smallskip \\
-{\bf University of Warwick, MMath Master of Mathematics} \hfill {\em October 2012 - July 2016} \\
-First Class Honours. 92.8\% overall; top 2\% in a class of $\approx$ 300. \medskip \\
-{\bf Teaching Responsibilities} \hfill {\em October 2015 - Present} \\
-University of Sheffield: Lead demonstrator in support classes on topics including: \\
-Core maths for mathematicians (MAS114) and engineering majors (MAS140); Beginner and intermediate programming in Python, LaTeX, and HTML (MAS115/212); Introductory R for statisticians. \\
-University of Warwick: Small group supervisor for 2x5 1st year mathematics students
+\begin{rSubsection}{谢菲尔德大学}{2016年10月 - 至今}{数学 全奖博士在读}{英国谢菲尔德}
+\item 研究方向：代数几何与组合数学之间的关系
+\item 主要课程： 使用图形处理器进行并行计算、交换代数、复微分几何
+\item 教学：负责数学和统计学学院、工程学院本科及研究生的教学工作,教授课程涵盖基础核心数学、初中级计算机编程(Python, LaTeX, 和HTML)、R语言编程
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{华威大学}{2012年10月 - 2016年7月}{数学 本硕连读}{英国考文垂}
+\item 获得一等荣誉学士学位,均分92.8 (专业前2\%)
+\item 教学：负责数学系本科一年级学生的小组研讨会,批改并讲解学生的作业
+\end{rSubsection}
 
 \end{rSection}
 
@@ -52,31 +60,34 @@ University of Warwick: Small group supervisor for 2x5 1st year mathematics stude
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{实习经历}
 
-\begin{rSubsection}{Health Data Insight}{July 2019 - September 2019}{Cancer Data Analyst}{Cambridge, UK}
-\item Using Python and SQL for data extraction, automating statistical tests, visualization
-\item Building a framework to analyse synthetic datasets of patient tumour records
-\item Presenting results to HDI board members and Public Health England stakeholders
-\item Chairing Analysts East team meeting; organising social events (group meals, punting)
+\begin{rSubsection}{Health Data Insight}{2019年7月 - 2019年9月}{数据分析师}{英国剑桥}
+\item 使用Python和SQL进行英国癌症病患的数据提取,使数据测试自动化、可视化
+\item 建立框架分析患者肿瘤记录的综合数据集
+\item 在公司年会向英国公共卫生部董事会成员展示汇报研究成果
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{TAS Services Ltd}{July 2016 - September 2016}{Research Analyst}{Hong Kong}
-\item Using Python for web scraping, data analysis and interfacing with SQL and mongoDB
-\item Automating data comparison across multiple sources for accurate data management
-\item Linking databases and preparing data for statistical modelling
-\item Discovering a new culture through international work experience
+\begin{rSubsection}{TAS Services Ltd}{2016年7月 - 2016年9月}{研究分析员}{中国香港}
+\item 使用Python软件进行网页抓取、数据分析
+\item 通过SQL和mongoDB软件将数据分析成果输出、倒入数据库
+\item 编写数据自动化分析程序,从而高效对比不同信息源数据,进行精准的数据管理
+\item 为统计建模编辑数据、链接数据库
 \end{rSubsection}
+
+\end{rSection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Warwick Maths Society}{February 2014 - April 2016}{President (2015/6) \& Sponsorship Officer (2014/5)}{University of Warwick}
-\item Managing a team of 15 exec members, chairing meetings, and organising events of varying sizes for our 900-strong membership, including external trips, summer BBQ
-\item Secured two new sponsors for the society, increasing sponsorship funds by 100\%
-\item Presenting at the Warwick Imperial undergraduate conference on my URSS summer research project.
-\item Delivered a revision lecture on linear algebra to over 200 of my peers
+\begin{rSection}{社团和组织经历}
+
+\begin{rSubsection}{华威大学数学社团}{2014年2月 – 2016年4月}{主席}{华威大学}
+\item 管理15人的社团管理层,主持社团会议,组织社团活动,管理900名社团会员
+\item 成功获得两名新的社团赞助商,社团赞助金较前一年增加至二倍
+\item 在华威大学、帝国理工大学联合本科会议上作暑期研究的演讲
+\item 组织200名同年级数学系学生做线性代数期末考试复习讲座,并针对复习内容进行讲解
 \end{rSubsection}
 
 \end{rSection}
@@ -85,15 +96,15 @@ University of Warwick: Small group supervisor for 2x5 1st year mathematics stude
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Additional Skills}
+\begin{rSection}{技能及其他}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Python (pandas, scikit-learn, Tensorflow, Plotly), SageMath, \\
- & C (OpenMP, CUDA), R, Java, Matlab, Mathematica, Magma \\
-Databases & MySQL, Oracle SQL, mongoDB \\
-Tools & LaTeX, git, Unix shell (bash), Hugo \\
-Languages & English (native), Mandarin Chinese (Limited working proficiency) \smallskip \\
-Interests & Chinese films, Hot Yoga, Theatre (Shakespeare), Hiking (Peak District)
+编程软件(精通) & Python、SageMath、C 语言 (OpenMP、 CUDA)、R语言 \\
+编程软件(熟练) & Java、Matlab、Mathematica、Magma \\
+数据库 & MySQL、Oracle SQL、mongoDB \\
+其他计算机软件 & LaTeX、git、Unix shell (bash)、Hugo \\
+语言 & 英文(母语)、中文(流利)、法语(基础) \\
+兴趣爱好 & 电影、戏剧（莎士比亚）、 瑜伽、徒步
 \end{tabular}
 
 \end{rSection}
