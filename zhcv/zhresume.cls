@@ -23,7 +23,7 @@
 
 \ProvidesClass{zhresume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[11pt,letterpaper]{ctexart} % Font size and paper type, renders Chinese characters, compile with XeLaTeX
+\LoadClass[10pt,letterpaper]{ctexart} % Font size and paper type, renders Chinese characters, compile with XeLaTeX
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
