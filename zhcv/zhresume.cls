@@ -83,7 +83,7 @@
 % \addprofilepic is used to display a profile picture in the top right corner
 \def \addprofilepic {
   \begin{tikzpicture}[remember picture, overlay]
-  \node[anchor=north east,inner sep=25pt, xshift=-30pt] at (current page.north east)
+  \node[anchor=north east,inner sep=25pt, xshift=-30pt, yshift=-15pt] at (current page.north east)
   {\includegraphics[width=0.15\textwidth]{\@imagepath}};
   \end{tikzpicture}
 }
@@ -143,7 +143,7 @@
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
-\def\addressskip{\vspace{-0.5em}} % The space between the two address (or phone/email) lines
+\def\addressskip{\vspace{-0.3em}} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\vspace{0.1em}} % The space above the horizontal line for each section 
-\def\nameskip{\vspace{-0.3em}} % The space after your name at the top
+\def\nameskip{\vspace{-0.1em}} % The space after your name at the top
 \def\sectionskip{\vspace{0.0em}} % The space after the heading section
