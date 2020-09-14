@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/, https://github.com/treyhunner/resume)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\name{Edward Pearce} % Your name
+\address{Email: \href{edwardm.pearce@yahoo.co.uk}{edwardm.pearce@yahoo.co.uk} \\ \href{https://www.linkedin.com/in/edwardm-pearce/}{linkedin.com/in/edwardm-pearce}} % Contact details line 1 (e.g. phone and email)
+\address{Website: \href{https://edwardmpearce.github.io}{edwardmpearce.github.io} \\ \href{https://github.com/edwardmpearce}{github.com/edwardmpearce}} % Contact details line 2 (e.g. address)
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf The University of Sheffield, PhD in Mathematics} \hfill {\em October 2016 - Present} \\ 
+Supervisor: Dr. Paul Johnson \smallskip \\
+{\bf University of Warwick, MMath Master of Mathematics} \hfill {\em October 2012 - July 2016} \\
+First Class Honours. 92.8\% overall; top 2\% in a class of $\approx$ 300.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Health Data Insight}{July 2019 - September 2019}{Cancer Data Analyst}{Cambridge, UK}
+\item Using Python and SQL for data extraction, automating statistical tests, visualization
+\item Building a framework to analyse synthetic datasets of patient tumour records
+\item Presenting results to HDI board members and Public Health England stakeholders
+\item Chairing Analysts East team meeting; organising social events (group meals, punting)
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{STFC AI\&ML Summer School UCL
+}{July 2018}{}{}
+\item Lectures from ASI Data Science on machine learning algorithms in theory and practice
+\item Practical labs using cloud computing with Intel (Devcloud), Amazon (Web Services), Nvidia
+\item Case studies on applications in industry and physics from Dell, Mellanox, LIGO, SKA
+\item Poster session presenting; volunteering for an outreach event to teach secondary school children about decision trees and deep learning using LHC data.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{TAS Services Ltd}{July 2016 - September 2016}{Research Analyst}{Hong Kong}
+\item Using Python for web scraping, data analysis and interfacing with SQL and mongoDB
+\item Automating data comparison across multiple sources for accurate data management
+\item Linking databases and preparing data for statistical modelling
+\item Discovering a new culture through international work experience
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Warwick Maths Society}{February 2014 - April 2016}{President (2015/6) \& Sponsorship Officer (2014/5)}{University of Warwick}
+\item Managing a team of 15 exec members, chairing meetings, and organising events of varying sizes for our 900-strong membership, including external trips, summer BBQ
+\item Secured two new sponsors for the society, increasing sponsorship funds by 100\%
+\item Presenting at the Warwick Imperial undergraduate conference on my URSS summer research project.
+\item Delivered a revision lecture on linear algebra to over 200 of my peers
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+{\em Sporadic Finite Subgroups of SL(3,C) and their McKay Quivers} \hfill July 2015 - September 2015 \\
+Funded by grant through the Undergraduate Research Scholarship Scheme, supervised by Professor Miles Reid, University of Warwick. 
+Source code: \href{https://github.com/edwardmpearce/urss-project}{https://github.com/edwardmpearce/urss-project} \\
+Presented at \href{https://warwick.ac.uk/fac/sci/maths/research/events/2015-16/nonsymposium/wimp/}{Warwick Imperial Autumn Meeting} (Uni. of Warwick, Nov. 2015)
+
+{\em Personal Website} \hfill Spring 2019 - Present \\
+\href{https://edwardmpearce.github.io/}{Website} for online resume, teaching material, mathematical puzzles, web development practice.\\
+Written with Hugo (static site generator). Continuous Integration with Travis CI.
+
+{\em Partitions Lab} \hfill Spring Semester 2019 \\
+\href{https://edwardmpearce.github.io/tutorial-partitions/}{Tutorial website} about integer partitions, with interactive code cells using SageMath computer mathematics software. 
+Written with Hugo, LaTeX, TikZ, HTML, JavaScript.
+
+{\em Artificial Intelligence and Earth Observation for the Prediction of Malaria Outbreak Risk} \hfill May 2019 \\
+Data science project for isardSAT using satellite data on soil moisture and land temperature. \\
+Source code: \href{https://github.com/edwardmpearce/cardiff-study-group-ai-in-healthcare}{https://github.com/edwardmpearce/cardiff-study-group-ai-in-healthcare}\\
+Presented at Innovate UK AI in Health \& Care Study Group with Industry at Uni. of Cardiff.
+
+{\em Simulacrum Test Suite} \hfill July 2019 - September 2019 \\
+Software for calculation and visualisation of statistical tests comparing a synthetic dataset with its training set, written using Python, SQL.
+Presented at \href{https://healthdatainsight.org.uk/hdi-symposium-2019/}{HDI Symposium} (Cambridge, Nov. 2019)
+
+{\em Physics Simulation: n-body system} \hfill Spring Semester 2020 \\
+Extracurricular course assignment for COM4521 Parallel Programming with GPUs. Comparing performance of serial and parallel programming techniques using C, OpenMP, and CUDA.\\
+Source code: \href{https://github.com/edwardmpearce/COM4521}{https://github.com/edwardmpearce/COM4521}
+
+{\em PyParti: Python for Partitions} \hfill July 2020 \\
+Python/SageMath package for integer partitions, combinatorics calculations and visualization. \\
+Automated testing with GitHub Actions workflow.
+\href{https://mybinder.org/v2/gh/edwardmpearce/pyparti/master}{Cloud-hosted notebooks} with Docker and Binder.
+Source code: \href{https://github.com/edwardmpearce/pyparti}{https://github.com/edwardmpearce/pyparti}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching Experience}
+
+{\bf Graduate Teaching Assistant} \hfill October 2016 - December 2020 \\
+{\em University of Sheffield:} Face-to-face and online teaching experience leading tutorials on topics including: \\
+MAS110/1 Mathematics Core 1/2; MAS114 Numbers and Groups; MAS140 Engineering Mathematics; MAS115 Mathematical Investigation Skills; MAS212 Scientific Computing and Simulation; \\
+MAS222 Differential Equations; MAS6024 MSc Statistical Data Science in R. \\
+Class sizes of around 20 for programming labs, 15-35 for mathematics tutorials, \\40 for engineering mathematics tutorials and MSc computer labs.
+
+{\bf Supervisor} \hfill October 2015 - July 2016 \\
+{\em University of Warwick:} Small group supervisor for 2x5 1st year mathematics students plus marking. \\
+Modules covered: MA132 Foundations, MA133 Differential Equations, MA136 Introduction to Abstract Algebra, MA131 Analysis I and II, MA106 Linear Algebra, MA134 Geometry and Motion.
+
+{\bf Poster presentations} \\
+{\em Hilbert schemes of Cyclic Quotient Surfaces},
+Géométrie Algébrique en Liberté XXVI (Uni. of Strasbourg, June 2018), STFC Summer School in AI\&ML (UCL, July 2018) \\
+{\em Fabulous Fractions and Musical Scales}, 
+Faculty of Science Graduate Student Showcase (Uni. of Sheffield, April 2018)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Additional Skills}
+	
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Computer Languages & Python (pandas, scikit-learn, Tensorflow, Plotly), SageMath, \\
+		& C (OpenMP, CUDA), R, Java, Matlab, Mathematica, Magma \\
+		Databases & MySQL, Oracle SQL, mongoDB \\
+		Tools & LaTeX, git, Unix shell (bash), Hugo \\
+		Languages & English (native), Mandarin Chinese (Limited working proficiency) \smallskip \\
+		Interests & Chinese films, Hot Yoga, Theatre (Shakespeare), Hiking (Peak District)
+	\end{tabular}
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
